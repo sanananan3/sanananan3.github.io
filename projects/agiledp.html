@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AgileDP: Quantizing Diffusion Policy via Dynamic Scaling and Selective Distillation project page." />
+  <meta name="theme-color" content="#20251f" />
+  <title>AgileDP | Jiyeon Joung</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="agiledp.css" />
+  <script defer src="../script.js"></script>
+</head>
+<body class="paper-page">
+  <header class="paper-nav">
+    <a href="../index.html">← Portfolio</a>
+    <span>AgileDP</span>
+    <a href="mailto:jjy8301004@gmail.com">Contact</a>
+  </header>
+
+  <main>
+    <section class="paper-hero">
+      <div class="paper-shell">
+        <p class="eyebrow">FIRST-AUTHOR RESEARCH · UNDER REVIEW</p>
+        <h1>AgileDP</h1>
+        <p class="paper-deck">Quantizing Diffusion Policy via Dynamic Scaling and Selective Distillation</p>
+        <p class="authors"><strong>Jiyeon Joung</strong>, Namyoon Kim, Seungseop Lee, Keunwoo Jang</p>
+        <div class="paper-actions">
+          <a href="../index.html#work">Portfolio</a>
+          <a href="https://github.com/sanananan3" target="_blank" rel="noreferrer">Code / GitHub ↗</a>
+        </div>
+        <div class="paper-hero-media">
+          <video autoplay muted loop playsinline poster="../assets/projects/agiledp/agiledp-poster.jpg">
+            <source src="../assets/projects/agiledp/agiledp.mp4" type="video/mp4" />
+          </video>
+          <div class="paper-hero-caption"><span>AgileDP-4</span><b>4-bit Diffusion Policy on robot manipulation</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper-section paper-shell">
+      <div class="paper-section-label">ABSTRACT</div>
+      <div class="paper-two-col">
+        <h2>저비트 환경에서도<br>로봇의 행동 정보를<br>보존하는 양자화</h2>
+        <div>
+          <p>Diffusion Policy는 반복적인 denoising으로 높은 성능을 보이지만, 추론 비용과 메모리 사용량이 커 엣지 로봇에 적용하기 어렵습니다. 기존 양자화 방식은 denoising timestep에 따라 달라지는 activation range와 action horizon 내 정보량 차이를 충분히 고려하지 못해 낮은 비트에서 급격한 성능 저하가 발생합니다.</p>
+          <p>AgileDP는 timestep별 동적 스케일링과 낮은 SNR의 중요한 행동 구간을 선별적으로 학습하는 지식 증류를 결합합니다. 이를 통해 U-Net·Transformer 기반 Diffusion Policy의 저정밀도 성능을 회복하고, 실제 Franka Panda와 Unitree G1 환경에서 효율성을 검증했습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper-section paper-shell">
+      <div class="paper-section-label">KEY RESULTS</div>
+      <div class="paper-metrics">
+        <article><strong>5.0×</strong><span>Inference speedup</span></article>
+        <article><strong>3.6×</strong><span>Memory reduction</span></article>
+        <article><strong>4-bit</strong><span>Weight & activation</span></article>
+        <article><strong>7</strong><span>Robot tasks evaluated</span></article>
+      </div>
+    </section>
+
+    <section class="paper-section paper-shell">
+      <div class="paper-section-label">MOTIVATION</div>
+      <div class="paper-figure-grid">
+        <figure><img src="../assets/projects/agiledp/denoising-shift.jpg" alt="denoising timestep별 activation 분포 변화"><figcaption><b>Challenge 01</b> Denoising timestep에 따라 activation range가 이동해 하나의 고정 scale이 모든 step에 적합하지 않습니다.</figcaption></figure>
+        <figure><img src="../assets/projects/agiledp/range-shift.png" alt="timestep별 activation range 그래프"><figcaption><b>Challenge 02</b> Action horizon의 low-magnitude step은 상대적 양자화 오차가 커져 장기 궤적에 영향을 줍니다.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="paper-section method-section">
+      <div class="paper-shell">
+        <div class="paper-section-label light">METHOD</div>
+        <div class="method-grid">
+          <article><span>01</span><h2>Temporal-Aware<br>Dynamic Adaptation</h2><p>각 denoising timestep의 분포를 조건으로 layer별 양자화 scale을 동적으로 조정해 시간축 분포 변화를 따라갑니다.</p></article>
+          <article><span>02</span><h2>Selective Noise-Robust<br>Distillation</h2><p>전체 trajectory를 균일하게 증류하지 않고, SNR 관점에서 양자화에 취약한 행동 구간을 선택적으로 보강합니다.</p></article>
+        </div>
+        <div class="method-visuals">
+          <img src="../assets/projects/agiledp/quantization.png" alt="FP32에서 저비트 정수 표현으로 변환하는 양자화 설명">
+          <video controls muted playsinline poster="../assets/projects/agiledp/denoising-activation-poster.jpg"><source src="../assets/projects/agiledp/denoising-activation.mp4" type="video/mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper-section paper-shell">
+      <div class="paper-section-label">QUALITATIVE RESULTS</div>
+      <div class="project-gallery" data-gallery>
+        <div class="gallery-stage">
+          <video controls muted playsinline preload="metadata" poster="../assets/projects/agiledp/agiledp-poster.jpg"><source src="../assets/projects/agiledp/agiledp.mp4" type="video/mp4"></video>
+          <div class="stage-caption"><b>AgileDP-4</b><span>4-bit policy result</span></div>
+          <button class="expand-media" type="button" aria-label="미디어 크게 보기">⤢</button>
+        </div>
+        <div class="gallery-thumbs">
+          <button class="media-thumb active" data-kind="video" data-src="../assets/projects/agiledp/agiledp.mp4" data-poster="../assets/projects/agiledp/agiledp-poster.jpg" data-title="AgileDP-4" data-caption="4-bit policy result"><img src="../assets/projects/agiledp/agiledp-poster.jpg" alt="AgileDP 결과"></button>
+          <button class="media-thumb" data-kind="video" data-src="../assets/projects/agiledp/full-precision.mp4" data-poster="../assets/projects/agiledp/full-precision-poster.jpg" data-title="Full Precision" data-caption="Reference policy"><img src="../assets/projects/agiledp/full-precision-poster.jpg" alt="FP32 결과"></button>
+          <button class="media-thumb" data-kind="video" data-src="../assets/projects/agiledp/quantized-baseline.mp4" data-poster="../assets/projects/agiledp/quantized-baseline-poster.jpg" data-title="Quantized Baseline" data-caption="Low-bit baseline"><img src="../assets/projects/agiledp/quantized-baseline-poster.jpg" alt="quantized baseline 결과"></button>
+          <button class="media-thumb" data-kind="video" data-src="../assets/projects/agiledp/tada.mp4" data-poster="../assets/projects/agiledp/tada-poster.jpg" data-title="Dynamic Scaling" data-caption="TADA only"><img src="../assets/projects/agiledp/tada-poster.jpg" alt="TADA 결과"></button>
+          <button class="media-thumb" data-kind="image" data-src="../assets/projects/agiledp/fp32.jpg" data-title="Full Precision Frame" data-caption="Reference rollout"><img src="../assets/projects/agiledp/fp32.jpg" alt="FP32 프레임"></button>
+          <button class="media-thumb" data-kind="image" data-src="../assets/projects/agiledp/baseline.jpg" data-title="Baseline Frame" data-caption="Quantized baseline"><img src="../assets/projects/agiledp/baseline.jpg" alt="baseline 프레임"></button>
+          <button class="media-thumb" data-kind="image" data-src="../assets/projects/agiledp/tada.jpg" data-title="TADA Frame" data-caption="Dynamic scaling"><img src="../assets/projects/agiledp/tada.jpg" alt="TADA 프레임"></button>
+          <button class="media-thumb" data-kind="image" data-src="../assets/projects/agiledp/agiledp.jpg" data-title="AgileDP Frame" data-caption="Dynamic scaling + selective distillation"><img src="../assets/projects/agiledp/agiledp.jpg" alt="AgileDP 프레임"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper-section paper-shell citation-section">
+      <div class="paper-section-label">CITATION</div>
+      <pre><code>@article{joung2026agiledp,
+  title={AgileDP: Quantizing Diffusion Policy via Dynamic Scaling and Selective Distillation},
+  author={Joung, Jiyeon and Kim, Namyoon and Lee, Seungseop and Jang, Keunwoo},
+  year={2026}
+}</code></pre>
+    </section>
+  </main>
+
+  <footer class="paper-footer"><a href="../index.html">← Jiyeon Joung Portfolio</a><span>AgileDP · 2026</span></footer>
+
+  <dialog class="media-dialog" id="mediaDialog"><button class="dialog-close" type="button" aria-label="닫기">×</button><div class="dialog-content"></div><div class="dialog-caption"></div></dialog>
+</body>
+</html>
