@@ -1,106 +1,252 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="정지연의 로보틱스·프론트엔드 포트폴리오. 실로봇 제어, 시뮬레이션, 엣지 AI, React/R3F 프로젝트를 영상과 함께 소개합니다." />
+
+  <meta
+    name="description"
+    content="Jiyeon Joung’s portfolio in efficient robotics, featuring real-world robot control, simulation, edge AI, and interactive React/R3F projects with video demos."
+  />
+
   <meta name="theme-color" content="#f3f0ea" />
-  <meta property="og:title" content="Jiyeon Joung | Robotics × Frontend" />
-  <meta property="og:description" content="로봇의 상태와 데이터 흐름을 이해하고, 사람이 판단할 수 있는 인터페이스로 연결합니다." />
+
+  <meta
+    property="og:title"
+    content="Jiyeon Joung | Efficient Robotics × Frontend"
+  />
+
+  <meta
+    property="og:description"
+    content="Building efficient robotic systems across real-world control, simulation, edge AI, and interactive interfaces."
+  />
+
   <meta property="og:type" content="website" />
-  <title>Jiyeon Joung | Robotics × Frontend</title>
+
+  <title>Jiyeon Joung | Efficient Robotics × Frontend</title>
+
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Jiyeon Joung",
-    "alternateName": "정지연",
+    "alternateName": "Jiyeon Jung",
     "url": "https://sanananan3.github.io/",
-    "sameAs": ["https://github.com/sanananan3"],
+    "sameAs": [
+      "https://github.com/sanananan3"
+    ],
     "jobTitle": "Robotics Researcher and Frontend Developer",
-    "knowsAbout": ["React", "React Three Fiber", "ROS2", "Real Robot", "Sim2Real", "Imitation Learning", "Reinforcement Learning", "Edge AI", "Model Quantization"]
+    "knowsAbout": [
+      "React",
+      "React Three Fiber",
+      "ROS2",
+      "Real Robot",
+      "Sim2Real",
+      "Imitation Learning",
+      "Reinforcement Learning",
+      "Edge AI",
+      "Model Quantization"
+    ]
   }
   </script>
 </head>
+
 <body>
-  <a class="skip-link" href="#main">본문으로 이동</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="홈으로 이동"><span>Jiyeon Joung</span><i></i></a>
-    <nav aria-label="주 메뉴">
+    <a class="brand" href="#top" aria-label="Go to homepage">
+      <span>Jiyeon Joung</span>
+      <i></i>
+    </a>
+
+    <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#work">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#credentials">Credentials</a>
     </nav>
+
     <div class="header-actions">
-      <a href="assets/documents/JiyeonJoung_CV.pdf" target="_blank" rel="noreferrer">CV</a>
-      <a class="header-contact" href="mailto:jjy8301004@gmail.com">Contact</a>
+      <a
+        href="assets/documents/JiyeonJoung_CV.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        CV
+      </a>
+
+      <a
+        class="header-contact"
+        href="mailto:jjy8301004@gmail.com"
+      >
+        Contact
+      </a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero shell">
       <div class="hero-copy reveal">
-        <p class="eyebrow">ROBOTICS · FRONTEND · EDGE AI</p>
-        <h1>로봇을 이해하고,<br><em>경험으로 연결하는</em><br>개발자</h1>
-        <p class="hero-intro">
-          실로봇의 센서·제어 데이터가 어디에서 만들어지는지 이해하고,
-          사용자가 빠르게 판단하고 안정적으로 제어할 수 있는 인터페이스를 설계합니다.
+        <p class="eyebrow">
+          EFFICIENT ROBOTICS · EDGE AI · FRONTEND
         </p>
+
+        <h1>
+          Building efficient robots,<br />
+          <em>from research</em><br />
+          to real systems.
+        </h1>
+
+        <p class="hero-intro">
+          I work across real-world robot control, simulation, and edge AI
+          to build efficient robotic systems that operate under real-world
+          constraints. I also design interfaces that make robot state and
+          data easier to understand and control.
+        </p>
+
         <div class="hero-links">
-          <a class="button primary" href="#work">프로젝트 보기</a>
-          <a class="button ghost" href="https://github.com/sanananan3" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="button primary" href="#work">
+            View Projects
+          </a>
+
+          <a
+            class="button ghost"
+            href="https://github.com/sanananan3"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
         </div>
+
         <dl class="hero-stats">
-          <div><dt>3</dt><dd>Research Labs</dd></div>
-          <div><dt>11</dt><dd>Projects</dd></div>
-          <div><dt>8+</dt><dd>Awards</dd></div>
+          <div>
+            <dt>3</dt>
+            <dd>Research Labs</dd>
+          </div>
+
+          <div>
+            <dt>11</dt>
+            <dd>Projects</dd>
+          </div>
+
+          <div>
+            <dt>8+</dt>
+            <dd>Awards</dd>
+          </div>
         </dl>
       </div>
 
       <div class="hero-media reveal">
         <div class="hero-video-card">
-          <video autoplay muted loop playsinline preload="metadata" poster="assets/projects/imitation/dp-unet-pick-place-poster.jpg">
-            <source src="assets/projects/imitation/dp-unet-pick-place.mp4" type="video/mp4" />
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="assets/projects/imitation/dp-unet-pick-place-poster.jpg"
+          >
+            <source
+              src="assets/projects/imitation/dp-unet-pick-place.mp4"
+              type="video/mp4"
+            />
           </video>
+
           <div class="hero-video-meta">
             <span>REAL ROBOT / FRANKA PANDA</span>
             <strong>Diffusion Policy</strong>
           </div>
         </div>
+
         <div class="profile-chip">
           <img
             src="assets/profile/profile.webp"
-            alt="정지연 프로필 사진"
+            alt="Portrait of Jiyeon Joung"
             width="138"
             height="154"
           />
+
           <div>
             <b>Jiyeon Joung</b>
-            <span>Robotics Researcher<br />Frontend Developer</span>
+            <span>
+              Robotics Researcher<br />
+              Frontend Developer
+            </span>
           </div>
         </div>
-        <div class="floating-note note-one"><b>ROS2</b><span>sensor → control</span></div>
-        <div class="floating-note note-two"><b>R3F</b><span>3D interface</span></div>
+
+        <div class="floating-note note-one">
+          <b>ROS2</b>
+          <span>sensor → control</span>
+        </div>
+
+        <div class="floating-note note-two">
+          <b>R3F</b>
+          <span>3D interface</span>
+        </div>
       </div>
     </section>
 
     <div class="ticker" aria-hidden="true">
-      <div><span>REAL ROBOT</span><i>✦</i><span>REACT</span><i>✦</i><span>ROS2</span><i>✦</i><span>SIM2REAL</span><i>✦</i><span>EDGE AI</span><i>✦</i><span>R3F</span><i>✦</i><span>QUANTIZATION</span><i>✦</i></div>
+      <div>
+        <span>REAL ROBOT</span>
+        <i>✦</i>
+        <span>REACT</span>
+        <i>✦</i>
+        <span>ROS2</span>
+        <i>✦</i>
+        <span>SIM2REAL</span>
+        <i>✦</i>
+        <span>EDGE AI</span>
+        <i>✦</i>
+        <span>R3F</span>
+        <i>✦</i>
+        <span>QUANTIZATION</span>
+        <i>✦</i>
+      </div>
     </div>
 
     <section id="about" class="about shell section-space">
-      <div class="section-label reveal"><span>01</span><p>ABOUT</p></div>
+      <div class="section-label reveal">
+        <span>01</span>
+        <p>ABOUT</p>
+      </div>
+
       <div class="about-grid">
-        <h2 class="reveal">기계에서 소프트웨어로,<br>소프트웨어에서 <em>실제 로봇</em>으로.</h2>
+        <h2 class="reveal">
+          From mechanics to software,<br />
+          and from software to <em>real robots.</em>
+        </h2>
+
         <div class="about-copy reveal">
-          <p>기계공학을 공부하며 하드웨어의 구조를 익혔고, 자율주행을 계기로 소프트웨어학과로 전공을 확장했습니다. 이후 실로봇 제어, 시뮬레이션, AI 모델 최적화, 프론트엔드 개발을 오가며 하나의 시스템이 실제 환경에서 동작하기까지 필요한 연결을 배웠습니다.</p>
-          <p>알고리즘의 성능뿐 아니라 센서 오차, 통신 지연, 연산 자원, 사용자 인터페이스까지 함께 고려하는 개발을 지향합니다. 낯선 기술은 작은 프로토타입으로 검증하고, 문제를 단계별로 나누어 끝까지 동작하는 결과물로 만드는 것이 제 강점입니다.</p>
+          <p>
+            I began in mechanical engineering, where I learned how hardware
+            is structured, and expanded into computer science through
+            autonomous-driving projects. Since then, I have worked across
+            real-world robot control, simulation, AI model optimization,
+            and frontend development, learning how each layer must connect
+            for a robotic system to operate outside the lab.
+          </p>
+
+          <p>
+            My approach to efficient robotics considers more than
+            algorithmic performance: sensor noise, communication latency,
+            compute limits, deployment constraints, and user interfaces
+            all matter. I test unfamiliar ideas through small prototypes,
+            break complex problems into manageable stages, and carry them
+            through to working systems.
+          </p>
+
           <div class="about-points">
-            <span>Real-world Robotics</span><span>Interactive 3D UI</span><span>On-device AI</span><span>System Integration</span>
+            <span>Real-world Robotics</span>
+            <span>Interactive 3D UI</span>
+            <span>On-device AI</span>
+            <span>System Integration</span>
           </div>
         </div>
       </div>
@@ -108,12 +254,24 @@
 
     <section id="work" class="work section-space">
       <div class="shell">
-        <div class="section-label reveal"><span>02</span><p>SELECTED WORK</p></div>
-        <div class="work-heading reveal">
-          <h2>연구와 제품을<br><em>실제로 동작하게</em></h2>
-          <p>각 프로젝트 설명 아래에서 실제 실험 영상과 결과 이미지를 직접 확인할 수 있습니다.</p>
+        <div class="section-label reveal">
+          <span>02</span>
+          <p>SELECTED WORK</p>
         </div>
-        <div class="filters reveal" aria-label="프로젝트 필터">
+
+        <div class="work-heading reveal">
+          <h2>
+            Turning research into<br />
+            <em>working systems.</em>
+          </h2>
+
+          <p>
+            Each project includes real experiment videos, implementation
+            details, and result visualizations.
+          </p>
+        </div>
+
+        <div class="filters reveal" aria-label="Project filters">
           <button class="active" data-filter="all">All</button>
           <button data-filter="robotics">Robotics</button>
           <button data-filter="frontend">Frontend</button>
@@ -123,276 +281,1582 @@
 
       <div class="project-stack shell">
         <!-- AgileDP -->
-        <article class="project project-featured reveal" data-category="robotics edge">
+        <article
+          class="project project-featured reveal"
+          data-category="robotics edge"
+        >
           <div class="project-header">
-            <div><span class="project-no">01</span><p class="project-type">FIRST-AUTHOR RESEARCH · 2025—2026</p></div>
-            <a class="project-arrow" href="projects/agiledp.html" aria-label="AgileDP 상세 페이지">↗</a>
+            <div>
+              <span class="project-no">01</span>
+              <p class="project-type">
+                FIRST-AUTHOR RESEARCH · 2025—2026
+              </p>
+            </div>
+
+            <a
+              class="project-arrow"
+              href="projects/agiledp.html"
+              aria-label="View AgileDP project details"
+            >
+              ↗
+            </a>
           </div>
+
           <div class="project-title-row">
-            <div><h3>AgileDP</h3><p class="project-subtitle">Quantizing Diffusion Policy via Dynamic Scaling and Selective Distillation</p></div>
-            <span class="project-status">CoRL submission · First author</span>
+            <div>
+              <h3>AgileDP</h3>
+              <p class="project-subtitle">
+                Quantizing Diffusion Policy via Dynamic Scaling and
+                Selective Distillation
+              </p>
+            </div>
+
+            <span class="project-status">
+              CoRL submission · First author
+            </span>
           </div>
+
           <div class="project-story">
-            <p>Diffusion Policy는 반복적인 denoising으로 높은 조작 성능을 보이지만, 추론 비용이 커 엣지 디바이스 적용이 어렵습니다. denoising step마다 달라지는 활성값 분포와 행동 궤적 내 정보 중요도의 차이를 분석하고, 시간별 동적 스케일링과 선택적 지식 증류를 결합한 저비트 양자화 기법을 설계했습니다.</p>
-            <dl class="metric-row"><div><dt>5.0×</dt><dd>추론 속도 향상</dd></div><div><dt>3.6×</dt><dd>메모리 절감</dd></div><div><dt>4-bit</dt><dd>실로봇 정책 검증</dd></div></dl>
+            <p>
+              Diffusion Policy achieves strong manipulation performance
+              through iterative denoising, but its inference cost makes
+              edge deployment difficult. I analyzed timestep-dependent
+              activation shifts and the uneven importance of information
+              across action trajectories, then designed a low-bit
+              quantization method combining dynamic scaling over time
+              with selective knowledge distillation.
+            </p>
+
+            <dl class="metric-row">
+              <div>
+                <dt>5.0×</dt>
+                <dd>Faster inference</dd>
+              </div>
+
+              <div>
+                <dt>3.6×</dt>
+                <dd>Lower memory use</dd>
+              </div>
+
+              <div>
+                <dt>4-bit</dt>
+                <dd>Real-robot validation</dd>
+              </div>
+            </dl>
           </div>
-          <ul class="tags"><li>Diffusion Policy</li><li>Quantization</li><li>PyTorch</li><li>Franka Panda</li><li>Unitree G1</li></ul>
+
+          <ul class="tags">
+            <li>Diffusion Policy</li>
+            <li>Quantization</li>
+            <li>PyTorch</li>
+            <li>Franka Panda</li>
+            <li>Unitree G1</li>
+          </ul>
+
           <div class="project-gallery" data-gallery>
             <div class="gallery-stage">
-              <video controls muted playsinline preload="metadata" poster="assets/projects/agiledp/agiledp-poster.jpg"><source src="assets/projects/agiledp/agiledp.mp4" type="video/mp4"></video>
-              <div class="stage-caption"><b>AgileDP-4</b><span>4-bit 정책의 manipulation 결과</span></div>
-              <button class="expand-media" type="button" aria-label="미디어 크게 보기">⤢</button>
+              <video
+                controls
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/projects/agiledp/agiledp-poster.jpg"
+              >
+                <source
+                  src="assets/projects/agiledp/agiledp.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <div class="stage-caption">
+                <b>AgileDP-4</b>
+                <span>Manipulation results with a 4-bit policy</span>
+              </div>
+
+              <button
+                class="expand-media"
+                type="button"
+                aria-label="Expand media"
+              >
+                ⤢
+              </button>
             </div>
-            <div class="gallery-thumbs" aria-label="AgileDP 미디어 선택">
-              <button class="media-thumb active" data-kind="video" data-src="assets/projects/agiledp/agiledp.mp4" data-poster="assets/projects/agiledp/agiledp-poster.jpg" data-title="AgileDP-4" data-caption="4-bit 정책의 manipulation 결과"><img src="assets/projects/agiledp/agiledp-poster.jpg" alt="AgileDP 결과 영상 썸네일"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/agiledp/full-precision.mp4" data-poster="assets/projects/agiledp/full-precision-poster.jpg" data-title="Full Precision" data-caption="원본 정밀도 정책"><img src="assets/projects/agiledp/full-precision-poster.jpg" alt="Full precision 결과"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/agiledp/quantized-baseline.mp4" data-poster="assets/projects/agiledp/quantized-baseline-poster.jpg" data-title="Quantized Baseline" data-caption="저비트 baseline 결과"><img src="assets/projects/agiledp/quantized-baseline-poster.jpg" alt="양자화 baseline 결과"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/agiledp/tada.mp4" data-poster="assets/projects/agiledp/tada-poster.jpg" data-title="Dynamic Scaling" data-caption="TADA 적용 결과"><img src="assets/projects/agiledp/tada-poster.jpg" alt="Dynamic scaling 결과"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/agiledp/denoising-activation.mp4" data-poster="assets/projects/agiledp/denoising-activation-poster.jpg" data-title="Denoising Analysis" data-caption="denoising step별 활성값 변화"><img src="assets/projects/agiledp/denoising-activation-poster.jpg" alt="Denoising 분석 영상"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/agiledp/denoising-shift.jpg" data-title="Activation Shift" data-caption="step별 분포 변화 분석"><img src="assets/projects/agiledp/denoising-shift.jpg" alt="활성값 분포 변화"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/agiledp/range-shift.png" data-title="Range by Timestep" data-caption="timestep에 따른 activation range"><img src="assets/projects/agiledp/range-shift.png" alt="timestep별 range"></button>
+
+            <div
+              class="gallery-thumbs"
+              aria-label="Select AgileDP media"
+            >
+              <button
+                class="media-thumb active"
+                data-kind="video"
+                data-src="assets/projects/agiledp/agiledp.mp4"
+                data-poster="assets/projects/agiledp/agiledp-poster.jpg"
+                data-title="AgileDP-4"
+                data-caption="Manipulation results with a 4-bit policy"
+              >
+                <img
+                  src="assets/projects/agiledp/agiledp-poster.jpg"
+                  alt="AgileDP result video thumbnail"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/agiledp/full-precision.mp4"
+                data-poster="assets/projects/agiledp/full-precision-poster.jpg"
+                data-title="Full Precision"
+                data-caption="Full-precision policy"
+              >
+                <img
+                  src="assets/projects/agiledp/full-precision-poster.jpg"
+                  alt="Full-precision results"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/agiledp/quantized-baseline.mp4"
+                data-poster="assets/projects/agiledp/quantized-baseline-poster.jpg"
+                data-title="Quantized Baseline"
+                data-caption="Low-bit baseline results"
+              >
+                <img
+                  src="assets/projects/agiledp/quantized-baseline-poster.jpg"
+                  alt="Quantized baseline results"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/agiledp/tada.mp4"
+                data-poster="assets/projects/agiledp/tada-poster.jpg"
+                data-title="Dynamic Scaling"
+                data-caption="Results with TADA"
+              >
+                <img
+                  src="assets/projects/agiledp/tada-poster.jpg"
+                  alt="Dynamic scaling results"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/agiledp/denoising-activation.mp4"
+                data-poster="assets/projects/agiledp/denoising-activation-poster.jpg"
+                data-title="Denoising Analysis"
+                data-caption="Activation changes across denoising steps"
+              >
+                <img
+                  src="assets/projects/agiledp/denoising-activation-poster.jpg"
+                  alt="Denoising analysis video"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/agiledp/denoising-shift.jpg"
+                data-title="Activation Shift"
+                data-caption="Analysis of distribution shifts across steps"
+              >
+                <img
+                  src="assets/projects/agiledp/denoising-shift.jpg"
+                  alt="Activation distribution shift"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/agiledp/range-shift.png"
+                data-title="Range by Timestep"
+                data-caption="Activation range by timestep"
+              >
+                <img
+                  src="assets/projects/agiledp/range-shift.png"
+                  alt="Range by timestep"
+                />
+              </button>
             </div>
           </div>
         </article>
 
         <!-- Imitation Learning -->
         <article class="project reveal" data-category="robotics">
-          <div class="project-header"><div><span class="project-no">02</span><p class="project-type">REAL-WORLD ROBOTICS · 2025—2026</p></div></div>
-          <div class="project-title-row"><div><h3>Real-world Imitation Learning</h3><p class="project-subtitle">ACT & Diffusion Policy on Franka Panda</p></div></div>
-          <div class="project-story two-col">
-            <p>ALOHA 중심으로 활용되던 ACT를 Franka Panda에 적용할 수 있도록 teleoperation, 데이터 수집, 학습, 추론, 제어 환경을 확장했습니다. Temporal Ensemble 대신 다항식 보간 기반 제어를 적용해 추론 부담과 궤적 불연속을 줄였습니다.</p>
-            <p>같은 실험 워크스페이스에 U-Net·DiT 기반 Diffusion Policy를 구현하고 문 열기, Pick-and-place 등 long-horizon task에서 실로봇 성능을 비교했습니다. MuJoCo 기반 Sim2Real 워크스페이스도 함께 구축했습니다.</p>
+          <div class="project-header">
+            <div>
+              <span class="project-no">02</span>
+              <p class="project-type">
+                REAL-WORLD ROBOTICS · 2025—2026
+              </p>
+            </div>
           </div>
-          <ul class="tags"><li>ACT</li><li>Diffusion Policy</li><li>Teleoperation</li><li>ROS2</li><li>MuJoCo</li></ul>
+
+          <div class="project-title-row">
+            <div>
+              <h3>Real-world Imitation Learning</h3>
+              <p class="project-subtitle">
+                ACT &amp; Diffusion Policy on Franka Panda
+              </p>
+            </div>
+          </div>
+
+          <div class="project-story two-col">
+            <p>
+              I adapted ACT, originally used primarily with ALOHA, for
+              the Franka Panda by extending the teleoperation, data
+              collection, training, inference, and control stack.
+              I replaced Temporal Ensemble with polynomial-interpolation
+              control to reduce inference overhead and improve trajectory
+              continuity.
+            </p>
+
+            <p>
+              Within the same experimental workspace, I implemented
+              U-Net- and DiT-based Diffusion Policies and compared
+              real-robot performance on long-horizon tasks such as
+              door opening and pick-and-place. I also built a
+              MuJoCo-based Sim2Real workspace for reproducible evaluation.
+            </p>
+          </div>
+
+          <ul class="tags">
+            <li>ACT</li>
+            <li>Diffusion Policy</li>
+            <li>Teleoperation</li>
+            <li>ROS2</li>
+            <li>MuJoCo</li>
+          </ul>
+
           <div class="project-gallery" data-gallery>
             <div class="gallery-stage">
-              <video controls muted playsinline preload="metadata" poster="assets/projects/imitation/dp-unet-door-poster.jpg"><source src="assets/projects/imitation/dp-unet-door.mp4" type="video/mp4"></video>
-              <div class="stage-caption"><b>U-Net Diffusion Policy</b><span>Door opening in the real world</span></div>
-              <button class="expand-media" type="button" aria-label="미디어 크게 보기">⤢</button>
+              <video
+                controls
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/projects/imitation/dp-unet-door-poster.jpg"
+              >
+                <source
+                  src="assets/projects/imitation/dp-unet-door.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <div class="stage-caption">
+                <b>U-Net Diffusion Policy</b>
+                <span>Door opening in the real world</span>
+              </div>
+
+              <button
+                class="expand-media"
+                type="button"
+                aria-label="Expand media"
+              >
+                ⤢
+              </button>
             </div>
+
             <div class="gallery-thumbs">
-              <button class="media-thumb active" data-kind="video" data-src="assets/projects/imitation/dp-unet-door.mp4" data-poster="assets/projects/imitation/dp-unet-door-poster.jpg" data-title="U-Net Diffusion Policy" data-caption="Door opening in the real world"><img src="assets/projects/imitation/dp-unet-door-poster.jpg" alt="U-Net door opening"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/imitation/dp-unet-pick-place.mp4" data-poster="assets/projects/imitation/dp-unet-pick-place-poster.jpg" data-title="U-Net Pick-and-place" data-caption="Franka Panda manipulation"><img src="assets/projects/imitation/dp-unet-pick-place-poster.jpg" alt="U-Net pick and place"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/imitation/dp-dit-door.mp4" data-poster="assets/projects/imitation/dp-dit-door-poster.jpg" data-title="DiT Diffusion Policy" data-caption="Door opening with transformer policy"><img src="assets/projects/imitation/dp-dit-door-poster.jpg" alt="DiT door opening"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/imitation/act-teleoperation.mp4" data-poster="assets/projects/imitation/act-teleoperation-poster.jpg" data-title="ACT Teleoperation" data-caption="Real-robot demonstration collection"><img src="assets/projects/imitation/act-teleoperation-poster.jpg" alt="ACT teleoperation"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/imitation/act-inference.mp4" data-poster="assets/projects/imitation/act-inference-poster.jpg" data-title="ACT Inference" data-caption="Polynomial-interpolation control"><img src="assets/projects/imitation/act-inference-poster.jpg" alt="ACT inference"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/imitation/action-chunking.png" data-title="Action Chunking" data-caption="ACT action sequence structure"><img src="assets/projects/imitation/action-chunking.png" alt="Action chunking diagram"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/imitation/temporal-ensemble.png" data-title="Temporal Ensemble" data-caption="Original ACT aggregation scheme"><img src="assets/projects/imitation/temporal-ensemble.png" alt="Temporal ensemble diagram"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/imitation/dp-pick-place.jpg" data-title="Real-robot Workspace" data-caption="Pick-and-place setup"><img src="assets/projects/imitation/dp-pick-place.jpg" alt="Franka pick and place setup"></button>
+              <button
+                class="media-thumb active"
+                data-kind="video"
+                data-src="assets/projects/imitation/dp-unet-door.mp4"
+                data-poster="assets/projects/imitation/dp-unet-door-poster.jpg"
+                data-title="U-Net Diffusion Policy"
+                data-caption="Door opening in the real world"
+              >
+                <img
+                  src="assets/projects/imitation/dp-unet-door-poster.jpg"
+                  alt="U-Net door opening"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/imitation/dp-unet-pick-place.mp4"
+                data-poster="assets/projects/imitation/dp-unet-pick-place-poster.jpg"
+                data-title="U-Net Pick-and-place"
+                data-caption="Franka Panda manipulation"
+              >
+                <img
+                  src="assets/projects/imitation/dp-unet-pick-place-poster.jpg"
+                  alt="U-Net pick and place"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/imitation/dp-dit-door.mp4"
+                data-poster="assets/projects/imitation/dp-dit-door-poster.jpg"
+                data-title="DiT Diffusion Policy"
+                data-caption="Door opening with transformer policy"
+              >
+                <img
+                  src="assets/projects/imitation/dp-dit-door-poster.jpg"
+                  alt="DiT door opening"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/imitation/act-teleoperation.mp4"
+                data-poster="assets/projects/imitation/act-teleoperation-poster.jpg"
+                data-title="ACT Teleoperation"
+                data-caption="Real-robot demonstration collection"
+              >
+                <img
+                  src="assets/projects/imitation/act-teleoperation-poster.jpg"
+                  alt="ACT teleoperation"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/imitation/act-inference.mp4"
+                data-poster="assets/projects/imitation/act-inference-poster.jpg"
+                data-title="ACT Inference"
+                data-caption="Polynomial-interpolation control"
+              >
+                <img
+                  src="assets/projects/imitation/act-inference-poster.jpg"
+                  alt="ACT inference"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/imitation/action-chunking.png"
+                data-title="Action Chunking"
+                data-caption="ACT action sequence structure"
+              >
+                <img
+                  src="assets/projects/imitation/action-chunking.png"
+                  alt="Action chunking diagram"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/imitation/temporal-ensemble.png"
+                data-title="Temporal Ensemble"
+                data-caption="Original ACT aggregation scheme"
+              >
+                <img
+                  src="assets/projects/imitation/temporal-ensemble.png"
+                  alt="Temporal ensemble diagram"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/imitation/dp-pick-place.jpg"
+                data-title="Real-robot Workspace"
+                data-caption="Pick-and-place setup"
+              >
+                <img
+                  src="assets/projects/imitation/dp-pick-place.jpg"
+                  alt="Franka pick and place setup"
+                />
+              </button>
             </div>
           </div>
         </article>
 
         <!-- Mobile RL -->
         <article class="project reveal" data-category="robotics">
-          <div class="project-header"><div><span class="project-no">03</span><p class="project-type">REINFORCEMENT LEARNING · 2024—2025</p></div></div>
-          <div class="project-title-row"><div><h3>Mobile Manipulation RL</h3><p class="project-subtitle">Single PPO → Hierarchical Reinforcement Learning</p></div></div>
-          <div class="project-story two-col">
-            <p>모바일 매니퓰레이터의 문 열기 작업을 위해 보상 함수, 충돌 조건, gripper 제어와 종료 조건을 수정하며 단일 PPO 정책을 개선했습니다. 기구학·동역학과 접촉 조건을 고려해 실험 환경을 단계별로 디버깅했습니다.</p>
-            <p>여러 단계가 연결되는 long-horizon task에서 단일 정책이 갖는 한계를 확인한 뒤, 상위 task generator와 하위 controller로 구성된 계층형 정책으로 확장했습니다. iGibson 결과를 재현하고 MuJoCo로 환경을 변환해 복제 가능성을 검증했습니다.</p>
+          <div class="project-header">
+            <div>
+              <span class="project-no">03</span>
+              <p class="project-type">
+                REINFORCEMENT LEARNING · 2024—2025
+              </p>
+            </div>
           </div>
-          <ul class="tags"><li>PPO</li><li>Hierarchical RL</li><li>Mobile Manipulator</li><li>Kinematics</li><li>Dynamics</li></ul>
+
+          <div class="project-title-row">
+            <div>
+              <h3>Mobile Manipulation RL</h3>
+              <p class="project-subtitle">
+                Single PPO → Hierarchical Reinforcement Learning
+              </p>
+            </div>
+          </div>
+
+          <div class="project-story two-col">
+            <p>
+              I improved a single PPO policy for mobile-manipulator
+              door opening by revising the reward function, collision
+              conditions, gripper control, and termination logic.
+              The environment was debugged step by step with attention
+              to kinematics, dynamics, and contact behavior.
+            </p>
+
+            <p>
+              After identifying the limits of a single policy on
+              multi-stage, long-horizon tasks, I extended the system
+              into a hierarchical policy with a high-level task
+              generator and low-level controller. I reproduced the
+              iGibson results and converted the environment to MuJoCo
+              to evaluate reproducibility across simulators.
+            </p>
+          </div>
+
+          <ul class="tags">
+            <li>PPO</li>
+            <li>Hierarchical RL</li>
+            <li>Mobile Manipulator</li>
+            <li>Kinematics</li>
+            <li>Dynamics</li>
+          </ul>
+
           <div class="project-gallery" data-gallery>
             <div class="gallery-stage">
-              <video controls muted playsinline preload="metadata" poster="assets/projects/mobile-rl/hrl-reproduction-poster.jpg"><source src="assets/projects/mobile-rl/hrl-reproduction.mp4" type="video/mp4"></video>
-              <div class="stage-caption"><b>HRL Reproduction</b><span>Skill-based mobile manipulation</span></div>
-              <button class="expand-media" type="button" aria-label="미디어 크게 보기">⤢</button>
+              <video
+                controls
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/projects/mobile-rl/hrl-reproduction-poster.jpg"
+              >
+                <source
+                  src="assets/projects/mobile-rl/hrl-reproduction.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <div class="stage-caption">
+                <b>HRL Reproduction</b>
+                <span>Skill-based mobile manipulation</span>
+              </div>
+
+              <button
+                class="expand-media"
+                type="button"
+                aria-label="Expand media"
+              >
+                ⤢
+              </button>
             </div>
+
             <div class="gallery-thumbs">
-              <button class="media-thumb active" data-kind="video" data-src="assets/projects/mobile-rl/hrl-reproduction.mp4" data-poster="assets/projects/mobile-rl/hrl-reproduction-poster.jpg" data-title="HRL Reproduction" data-caption="Skill-based mobile manipulation"><img src="assets/projects/mobile-rl/hrl-reproduction-poster.jpg" alt="HRL reproduction"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/mobile-rl/hrl-mujoco.mp4" data-poster="assets/projects/mobile-rl/hrl-mujoco-poster.jpg" data-title="MuJoCo HRL" data-caption="Converted mobile manipulation environment"><img src="assets/projects/mobile-rl/hrl-mujoco-poster.jpg" alt="MuJoCo HRL"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/mobile-rl/single-ppo-sim.mp4" data-poster="assets/projects/mobile-rl/single-ppo-sim-poster.jpg" data-title="Single PPO" data-caption="Initial door-opening simulation"><img src="assets/projects/mobile-rl/single-ppo-sim-poster.jpg" alt="Single PPO simulation"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/mobile-rl/single-ppo-debug.mp4" data-poster="assets/projects/mobile-rl/single-ppo-debug-poster.jpg" data-title="PPO Debugging" data-caption="Collision and alignment adjustment"><img src="assets/projects/mobile-rl/single-ppo-debug-poster.jpg" alt="PPO debugging"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/mobile-rl/hrl-steps.png" data-title="Hierarchical Skills" data-caption="Sub-task decomposition"><img src="assets/projects/mobile-rl/hrl-steps.png" alt="HRL step sequence"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/mobile-rl/ppo-before.jpg" data-title="Before" data-caption="Initial policy behavior"><img src="assets/projects/mobile-rl/ppo-before.jpg" alt="PPO before improvement"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/mobile-rl/ppo-after.jpg" data-title="After" data-caption="Improved policy behavior"><img src="assets/projects/mobile-rl/ppo-after.jpg" alt="PPO after improvement"></button>
+              <button
+                class="media-thumb active"
+                data-kind="video"
+                data-src="assets/projects/mobile-rl/hrl-reproduction.mp4"
+                data-poster="assets/projects/mobile-rl/hrl-reproduction-poster.jpg"
+                data-title="HRL Reproduction"
+                data-caption="Skill-based mobile manipulation"
+              >
+                <img
+                  src="assets/projects/mobile-rl/hrl-reproduction-poster.jpg"
+                  alt="HRL reproduction"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/mobile-rl/hrl-mujoco.mp4"
+                data-poster="assets/projects/mobile-rl/hrl-mujoco-poster.jpg"
+                data-title="MuJoCo HRL"
+                data-caption="Converted mobile manipulation environment"
+              >
+                <img
+                  src="assets/projects/mobile-rl/hrl-mujoco-poster.jpg"
+                  alt="MuJoCo HRL"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/mobile-rl/single-ppo-sim.mp4"
+                data-poster="assets/projects/mobile-rl/single-ppo-sim-poster.jpg"
+                data-title="Single PPO"
+                data-caption="Initial door-opening simulation"
+              >
+                <img
+                  src="assets/projects/mobile-rl/single-ppo-sim-poster.jpg"
+                  alt="Single PPO simulation"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/mobile-rl/single-ppo-debug.mp4"
+                data-poster="assets/projects/mobile-rl/single-ppo-debug-poster.jpg"
+                data-title="PPO Debugging"
+                data-caption="Collision and alignment adjustment"
+              >
+                <img
+                  src="assets/projects/mobile-rl/single-ppo-debug-poster.jpg"
+                  alt="PPO debugging"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/mobile-rl/hrl-steps.png"
+                data-title="Hierarchical Skills"
+                data-caption="Sub-task decomposition"
+              >
+                <img
+                  src="assets/projects/mobile-rl/hrl-steps.png"
+                  alt="HRL step sequence"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/mobile-rl/ppo-before.jpg"
+                data-title="Before"
+                data-caption="Initial policy behavior"
+              >
+                <img
+                  src="assets/projects/mobile-rl/ppo-before.jpg"
+                  alt="PPO before improvement"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/mobile-rl/ppo-after.jpg"
+                data-title="After"
+                data-caption="Improved policy behavior"
+              >
+                <img
+                  src="assets/projects/mobile-rl/ppo-after.jpg"
+                  alt="PPO after improvement"
+                />
+              </button>
             </div>
           </div>
         </article>
 
         <!-- Neural Simulator -->
         <article class="project reveal" data-category="robotics">
-          <div class="project-header"><div><span class="project-no">04</span><p class="project-type">SIMULATION · 2026</p></div></div>
-          <div class="project-title-row"><div><h3>Scalable Neural Simulator</h3><p class="project-subtitle">Articulated rigid-body simulation and Sim2Real evaluation</p></div></div>
-          <div class="project-story two-col">
-            <p>관절형 강체를 위한 Neural Simulator 개발에서 technical ablation을 담당하고, 충돌·수치 적분·상태 전이 등 물리 시뮬레이션 요소를 분석했습니다.</p>
-            <p>Isaac, RaiSim, MJX, MuJoCo-CPU와 자체 simulator를 동일 조건에서 비교하는 평가 파이프라인을 구축했습니다. RL 성능을 간접 지표로 쓰는 대신 simulation과 real-world 간의 직접적인 일치도를 측정하는 Sim2Real metric을 제안해 채택되었습니다.</p>
+          <div class="project-header">
+            <div>
+              <span class="project-no">04</span>
+              <p class="project-type">SIMULATION · 2026</p>
+            </div>
           </div>
-          <ul class="tags"><li>Isaac</li><li>RaiSim</li><li>MJX</li><li>MuJoCo</li><li>Benchmark</li></ul>
+
+          <div class="project-title-row">
+            <div>
+              <h3>Scalable Neural Simulator</h3>
+              <p class="project-subtitle">
+                Articulated rigid-body simulation and Sim2Real evaluation
+              </p>
+            </div>
+          </div>
+
+          <div class="project-story two-col">
+            <p>
+              I led technical ablations for a neural simulator designed
+              for articulated rigid bodies, analyzing physical simulation
+              components including collision handling, numerical integration,
+              and state transitions.
+            </p>
+
+            <p>
+              I built an evaluation pipeline that compares Isaac, RaiSim,
+              MJX, MuJoCo-CPU, and the in-house simulator under consistent
+              conditions. Rather than using downstream RL performance as
+              an indirect proxy, I proposed a Sim2Real metric that directly
+              measures agreement between simulation and real-world
+              trajectories; the metric was adopted by the project.
+            </p>
+          </div>
+
+          <ul class="tags">
+            <li>Isaac</li>
+            <li>RaiSim</li>
+            <li>MJX</li>
+            <li>MuJoCo</li>
+            <li>Benchmark</li>
+          </ul>
+
           <div class="project-gallery" data-gallery>
             <div class="gallery-stage">
-              <video controls muted playsinline preload="metadata" poster="assets/projects/neural-sim/neural-simulator-poster.jpg"><source src="assets/projects/neural-sim/neural-simulator.mp4" type="video/mp4"></video>
-              <div class="stage-caption"><b>Neural Simulator</b><span>Articulated rigid-body rollout</span></div>
-              <button class="expand-media" type="button" aria-label="미디어 크게 보기">⤢</button>
+              <video
+                controls
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/projects/neural-sim/neural-simulator-poster.jpg"
+              >
+                <source
+                  src="assets/projects/neural-sim/neural-simulator.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <div class="stage-caption">
+                <b>Neural Simulator</b>
+                <span>Articulated rigid-body rollout</span>
+              </div>
+
+              <button
+                class="expand-media"
+                type="button"
+                aria-label="Expand media"
+              >
+                ⤢
+              </button>
             </div>
+
             <div class="gallery-thumbs">
-              <button class="media-thumb active" data-kind="video" data-src="assets/projects/neural-sim/neural-simulator.mp4" data-poster="assets/projects/neural-sim/neural-simulator-poster.jpg" data-title="Neural Simulator" data-caption="Articulated rigid-body rollout"><img src="assets/projects/neural-sim/neural-simulator-poster.jpg" alt="Neural simulator video"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/neural-sim/pipeline.png" data-title="Evaluation Pipeline" data-caption="Simulator-to-real comparison pipeline"><img src="assets/projects/neural-sim/pipeline.png" alt="Neural simulator evaluation pipeline"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/neural-sim/benchmark-curve.png" data-title="Benchmark Curves" data-caption="Multi-simulator comparison"><img src="assets/projects/neural-sim/benchmark-curve.png" alt="Simulator benchmark curve"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/neural-sim/quantitative-comparison.png" data-title="Quantitative Comparison" data-caption="Evaluation result summary"><img src="assets/projects/neural-sim/quantitative-comparison.png" alt="Quantitative comparison"></button>
+              <button
+                class="media-thumb active"
+                data-kind="video"
+                data-src="assets/projects/neural-sim/neural-simulator.mp4"
+                data-poster="assets/projects/neural-sim/neural-simulator-poster.jpg"
+                data-title="Neural Simulator"
+                data-caption="Articulated rigid-body rollout"
+              >
+                <img
+                  src="assets/projects/neural-sim/neural-simulator-poster.jpg"
+                  alt="Neural simulator video"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/neural-sim/pipeline.png"
+                data-title="Evaluation Pipeline"
+                data-caption="Simulator-to-real comparison pipeline"
+              >
+                <img
+                  src="assets/projects/neural-sim/pipeline.png"
+                  alt="Neural simulator evaluation pipeline"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/neural-sim/benchmark-curve.png"
+                data-title="Benchmark Curves"
+                data-caption="Multi-simulator comparison"
+              >
+                <img
+                  src="assets/projects/neural-sim/benchmark-curve.png"
+                  alt="Simulator benchmark curve"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/neural-sim/quantitative-comparison.png"
+                data-title="Quantitative Comparison"
+                data-caption="Evaluation result summary"
+              >
+                <img
+                  src="assets/projects/neural-sim/quantitative-comparison.png"
+                  alt="Quantitative comparison"
+                />
+              </button>
             </div>
           </div>
         </article>
 
         <!-- PTMQ -->
         <article class="project reveal" data-category="edge">
-          <div class="project-header"><div><span class="project-no">05</span><p class="project-type">MODEL QUANTIZATION · 2024</p></div><a class="doc-link" href="assets/documents/PTMQ_final_report.pdf" target="_blank" rel="noreferrer">Report ↗</a></div>
-          <div class="project-title-row"><div><h3>PTMQ+</h3><p class="project-subtitle">Multi-bit Weight & Activation Post-Training Quantization</p></div></div>
-          <div class="project-story two-col">
-            <p>소스코드가 공개되지 않은 PTMQ 논문을 PyTorch로 직접 구현해 block reconstruction, Multi-bit Feature Mixer, Group-Distill Loss를 재현하고 오픈소스로 공개했습니다.</p>
-            <p>activation 중심의 multi-bit PTQ를 weight까지 확장한 PTMQ-W를 제안하고, 최종적으로 가중치와 활성값 모두에서 가변 정밀도를 지원하는 PTMQ+를 개발했습니다. ResNet, MobileNet, RegNet, ViT를 ImageNet에서 검증했습니다.</p>
+          <div class="project-header">
+            <div>
+              <span class="project-no">05</span>
+              <p class="project-type">
+                MODEL QUANTIZATION · 2024
+              </p>
+            </div>
+
+            <a
+              class="doc-link"
+              href="assets/documents/PTMQ_final_report.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Report ↗
+            </a>
           </div>
-          <ul class="tags"><li>PyTorch</li><li>PTQ</li><li>CNN</li><li>Vision Transformer</li><li>Open Source</li></ul>
+
+          <div class="project-title-row">
+            <div>
+              <h3>PTMQ+</h3>
+              <p class="project-subtitle">
+                Multi-bit Weight &amp; Activation Post-Training Quantization
+              </p>
+            </div>
+          </div>
+
+          <div class="project-story two-col">
+            <p>
+              I reimplemented the PTMQ paper in PyTorch despite the absence
+              of released source code, reproducing block reconstruction,
+              the Multi-bit Feature Mixer, and Group-Distill Loss, and
+              published the implementation as open source.
+            </p>
+
+            <p>
+              I proposed PTMQ-W, extending activation-focused multi-bit PTQ
+              to weights, and developed PTMQ+, which supports variable
+              precision for both weights and activations. The method was
+              evaluated on ResNet, MobileNet, RegNet, and ViT using ImageNet.
+            </p>
+          </div>
+
+          <ul class="tags">
+            <li>PyTorch</li>
+            <li>PTQ</li>
+            <li>CNN</li>
+            <li>Vision Transformer</li>
+            <li>Open Source</li>
+          </ul>
+
           <div class="project-gallery" data-gallery>
             <div class="gallery-stage">
-              <img src="assets/projects/ptmq/image16.png" alt="PTMQ+ 프레임워크 개요" loading="lazy" />
-              <div class="stage-caption"><b>PTMQ+</b><span>Multi-bit weight & activation framework</span></div>
-              <button class="expand-media" type="button" aria-label="미디어 크게 보기">⤢</button>
+              <img
+                src="assets/projects/ptmq/image16.png"
+                alt="Overview of the PTMQ+ framework"
+                loading="lazy"
+              />
+
+              <div class="stage-caption">
+                <b>PTMQ+</b>
+                <span>Multi-bit weight &amp; activation framework</span>
+              </div>
+
+              <button
+                class="expand-media"
+                type="button"
+                aria-label="Expand media"
+              >
+                ⤢
+              </button>
             </div>
+
             <div class="gallery-thumbs">
-              <button class="media-thumb active" data-kind="image" data-src="assets/projects/ptmq/image16.png" data-title="PTMQ+" data-caption="Multi-bit weight & activation framework"><img src="assets/projects/ptmq/image16.png" alt="PTMQ+ overview"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/ptmq/image13.png" data-title="PTMQ Architecture" data-caption="Original multi-bit activation structure"><img src="assets/projects/ptmq/image13.png" alt="PTMQ architecture"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/ptmq/image14.png" data-title="PTMQ-W" data-caption="Multi-bit weight quantizer"><img src="assets/projects/ptmq/image14.png" alt="PTMQ-W"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/ptmq/image15.png" data-title="Weight Extension" data-caption="Extended weight quantization structure"><img src="assets/projects/ptmq/image15.png" alt="PTMQ weight extension"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/ptmq/image19.png" data-title="Reproduction Results" data-caption="Bit-width performance curves"><img src="assets/projects/ptmq/image19.png" alt="PTMQ result curves"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/ptmq/image20.png" data-title="CNN Results" data-caption="Quantitative comparison table"><img src="assets/projects/ptmq/image20.png" alt="PTMQ quantitative result"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/ptmq/image8.png" data-title="Implementation" data-caption="PyTorch implementation"><img src="assets/projects/ptmq/image8.png" alt="PTMQ source code"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/ptmq/image6.png" data-title="Quantization Overview" data-caption="Post-training multi-bit quantization"><img src="assets/projects/ptmq/image6.png" alt="Quantization overview"></button>
+              <button
+                class="media-thumb active"
+                data-kind="image"
+                data-src="assets/projects/ptmq/image16.png"
+                data-title="PTMQ+"
+                data-caption="Multi-bit weight & activation framework"
+              >
+                <img
+                  src="assets/projects/ptmq/image16.png"
+                  alt="PTMQ+ overview"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/ptmq/image13.png"
+                data-title="PTMQ Architecture"
+                data-caption="Original multi-bit activation structure"
+              >
+                <img
+                  src="assets/projects/ptmq/image13.png"
+                  alt="PTMQ architecture"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/ptmq/image14.png"
+                data-title="PTMQ-W"
+                data-caption="Multi-bit weight quantizer"
+              >
+                <img
+                  src="assets/projects/ptmq/image14.png"
+                  alt="PTMQ-W"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/ptmq/image15.png"
+                data-title="Weight Extension"
+                data-caption="Extended weight quantization structure"
+              >
+                <img
+                  src="assets/projects/ptmq/image15.png"
+                  alt="PTMQ weight extension"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/ptmq/image19.png"
+                data-title="Reproduction Results"
+                data-caption="Bit-width performance curves"
+              >
+                <img
+                  src="assets/projects/ptmq/image19.png"
+                  alt="PTMQ result curves"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/ptmq/image20.png"
+                data-title="CNN Results"
+                data-caption="Quantitative comparison table"
+              >
+                <img
+                  src="assets/projects/ptmq/image20.png"
+                  alt="PTMQ quantitative result"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/ptmq/image8.png"
+                data-title="Implementation"
+                data-caption="PyTorch implementation"
+              >
+                <img
+                  src="assets/projects/ptmq/image8.png"
+                  alt="PTMQ source code"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/ptmq/image6.png"
+                data-title="Quantization Overview"
+                data-caption="Post-training multi-bit quantization"
+              >
+                <img
+                  src="assets/projects/ptmq/image6.png"
+                  alt="Quantization overview"
+                />
+              </button>
             </div>
           </div>
         </article>
 
-        <!-- Autonomous -->
+        <!-- Autonomous Driving -->
         <article class="project reveal" data-category="robotics">
-          <div class="project-header"><div><span class="project-no">06</span><p class="project-type">AUTONOMOUS DRIVING · 2024—2025</p></div></div>
-          <div class="project-title-row"><div><h3>ROS2 Autonomous Driving</h3><p class="project-subtitle">Camera·LiDAR perception and ESP32 scale-car control</p></div></div>
-          <div class="project-story two-col">
-            <p>카메라와 LiDAR 센서로 주행 환경을 인지하고, Arduino 기반 ESP32를 C++로 프로그래밍해 스케일카의 속도·조향 제어 로직을 설계했습니다.</p>
-            <p>차선 추종, 장애물 회피, T자·평행 주차, 신호등 정지 등 미션 주행을 구현했습니다. ROS2·딥러닝 기반 자율주행 프로젝트와 교내 동아리 활동을 이어가며 자율주행 SW 경진대회에서 3차례 수상했습니다.</p>
+          <div class="project-header">
+            <div>
+              <span class="project-no">06</span>
+              <p class="project-type">
+                AUTONOMOUS DRIVING · 2024—2025
+              </p>
+            </div>
           </div>
-          <ul class="tags"><li>ROS2</li><li>Camera</li><li>LiDAR</li><li>ESP32</li><li>C++</li></ul>
+
+          <div class="project-title-row">
+            <div>
+              <h3>ROS2 Autonomous Driving</h3>
+              <p class="project-subtitle">
+                Camera · LiDAR perception and ESP32 scale-car control
+              </p>
+            </div>
+          </div>
+
+          <div class="project-story two-col">
+            <p>
+              I used camera and LiDAR sensors to perceive the driving
+              environment and programmed an Arduino-based ESP32 in C++
+              to control the speed and steering of a scale car.
+            </p>
+
+            <p>
+              I implemented mission-driving behaviors including lane
+              following, obstacle avoidance, T-shaped and parallel parking,
+              and traffic-light stopping. Through ROS2- and deep-learning-based
+              autonomous-driving projects and student club activities,
+              I received awards in three autonomous-driving software
+              competitions.
+            </p>
+          </div>
+
+          <ul class="tags">
+            <li>ROS2</li>
+            <li>Camera</li>
+            <li>LiDAR</li>
+            <li>ESP32</li>
+            <li>C++</li>
+          </ul>
+
           <div class="project-gallery" data-gallery>
             <div class="gallery-stage portrait-stage">
-              <video controls muted playsinline preload="metadata" poster="assets/projects/autonomous/lane-driving-poster.jpg"><source src="assets/projects/autonomous/lane-driving.mp4" type="video/mp4"></video>
-              <div class="stage-caption"><b>Lane Driving</b><span>Sensor-based scale-car control</span></div>
-              <button class="expand-media" type="button" aria-label="미디어 크게 보기">⤢</button>
+              <video
+                controls
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/projects/autonomous/lane-driving-poster.jpg"
+              >
+                <source
+                  src="assets/projects/autonomous/lane-driving.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <div class="stage-caption">
+                <b>Lane Driving</b>
+                <span>Sensor-based scale-car control</span>
+              </div>
+
+              <button
+                class="expand-media"
+                type="button"
+                aria-label="Expand media"
+              >
+                ⤢
+              </button>
             </div>
+
             <div class="gallery-thumbs">
-              <button class="media-thumb active" data-kind="video" data-src="assets/projects/autonomous/lane-driving.mp4" data-poster="assets/projects/autonomous/lane-driving-poster.jpg" data-title="Lane Driving" data-caption="Sensor-based scale-car control"><img src="assets/projects/autonomous/lane-driving-poster.jpg" alt="Lane driving"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/autonomous/parking-course.mp4" data-poster="assets/projects/autonomous/parking-course-poster.jpg" data-title="Parking Course" data-caption="T and parallel parking missions"><img src="assets/projects/autonomous/parking-course-poster.jpg" alt="Parking course"></button>
-              <button class="media-thumb" data-kind="video" data-src="assets/projects/autonomous/mission-driving.mp4" data-poster="assets/projects/autonomous/mission-driving-poster.jpg" data-title="Mission Driving" data-caption="Integrated autonomous mission"><img src="assets/projects/autonomous/mission-driving-poster.jpg" alt="Mission driving"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/autonomous/simulator.png" data-title="Simulation" data-caption="Autonomous-driving workspace"><img src="assets/projects/autonomous/simulator.png" alt="Autonomous driving simulator"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/autonomous/dataset.png" data-title="Dataset" data-caption="Lane dataset collection and annotation"><img src="assets/projects/autonomous/dataset.png" alt="Lane dataset"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/autonomous/course-1.jpg" data-title="Scale-car Course" data-caption="Physical driving course"><img src="assets/projects/autonomous/course-1.jpg" alt="Scale car course"></button>
-              <button class="media-thumb" data-kind="image" data-src="assets/projects/autonomous/course-2.jpg" data-title="Parking Setup" data-caption="Mission course configuration"><img src="assets/projects/autonomous/course-2.jpg" alt="Parking setup"></button>
+              <button
+                class="media-thumb active"
+                data-kind="video"
+                data-src="assets/projects/autonomous/lane-driving.mp4"
+                data-poster="assets/projects/autonomous/lane-driving-poster.jpg"
+                data-title="Lane Driving"
+                data-caption="Sensor-based scale-car control"
+              >
+                <img
+                  src="assets/projects/autonomous/lane-driving-poster.jpg"
+                  alt="Lane driving"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/autonomous/parking-course.mp4"
+                data-poster="assets/projects/autonomous/parking-course-poster.jpg"
+                data-title="Parking Course"
+                data-caption="T and parallel parking missions"
+              >
+                <img
+                  src="assets/projects/autonomous/parking-course-poster.jpg"
+                  alt="Parking course"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="video"
+                data-src="assets/projects/autonomous/mission-driving.mp4"
+                data-poster="assets/projects/autonomous/mission-driving-poster.jpg"
+                data-title="Mission Driving"
+                data-caption="Integrated autonomous mission"
+              >
+                <img
+                  src="assets/projects/autonomous/mission-driving-poster.jpg"
+                  alt="Mission driving"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/autonomous/simulator.png"
+                data-title="Simulation"
+                data-caption="Autonomous-driving workspace"
+              >
+                <img
+                  src="assets/projects/autonomous/simulator.png"
+                  alt="Autonomous driving simulator"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/autonomous/dataset.png"
+                data-title="Dataset"
+                data-caption="Lane dataset collection and annotation"
+              >
+                <img
+                  src="assets/projects/autonomous/dataset.png"
+                  alt="Lane dataset"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/autonomous/course-1.jpg"
+                data-title="Scale-car Course"
+                data-caption="Physical driving course"
+              >
+                <img
+                  src="assets/projects/autonomous/course-1.jpg"
+                  alt="Scale car course"
+                />
+              </button>
+
+              <button
+                class="media-thumb"
+                data-kind="image"
+                data-src="assets/projects/autonomous/course-2.jpg"
+                data-title="Parking Setup"
+                data-caption="Mission course configuration"
+              >
+                <img
+                  src="assets/projects/autonomous/course-2.jpg"
+                  alt="Parking setup"
+                />
+              </button>
             </div>
           </div>
         </article>
 
         <!-- Invoice VLM -->
-        <article class="project reveal" data-category="robotics edge">
-          <div class="project-header"><div><span class="project-no">07</span><p class="project-type">EDGE ROBOT VISION · 2026</p></div></div>
-          <div class="project-title-row"><div><h3>Delivery Robot Invoice VLM</h3><p class="project-subtitle">Offline parcel-address recognition on Jetson Orin NX</p></div></div>
-          <div class="project-story two-col">
-            <p>배달로봇이 카메라로 택배 송장을 인식하고 동·호수·수취인 정보를 추출하는 end-to-end 파이프라인을 개발했습니다. YOLO OBB로 송장을 검출·크롭하고 InternVL3-2B를 LoRA 튜닝해 구조화된 필드를 생성했습니다.</p>
-            <p>ROS2와 Depth Camera를 이용한 거리 기반 autofocus를 구현하고, JetPack 6.1/7.2에 배포했습니다. 공식 이미지가 없던 7.2에서는 TensorRT-LLM을 직접 소스 빌드하고 SmoothQuant W8A8을 적용해 오프라인 0.5초 이내·정확도 98% 이상의 제약을 만족했습니다.</p>
+        <article
+          class="project reveal"
+          data-category="robotics edge"
+        >
+          <div class="project-header">
+            <div>
+              <span class="project-no">07</span>
+              <p class="project-type">
+                EDGE ROBOT VISION · 2026
+              </p>
+            </div>
           </div>
-          <dl class="metric-row compact"><div><dt>&lt;0.5s</dt><dd>End-to-end</dd></div><div><dt>98%+</dt><dd>Field accuracy</dd></div><div><dt>Offline</dt><dd>Jetson deployment</dd></div></dl>
-          <ul class="tags"><li>InternVL3-2B</li><li>YOLO OBB</li><li>TensorRT-LLM</li><li>ROS2</li><li>Jetson Orin NX</li></ul>
-          <div class="single-visual"><img src="assets/projects/invoice/cover.svg" alt="Jetson Orin NX 송장 인식 파이프라인 시각화" loading="lazy"><p>실제 촬영 영상·추론 화면을 추가하려면 <code>assets/projects/invoice/</code>에 파일을 넣고 gallery 항목을 복제하면 됩니다.</p></div>
+
+          <div class="project-title-row">
+            <div>
+              <h3>Delivery Robot Invoice VLM</h3>
+              <p class="project-subtitle">
+                Offline parcel-address recognition on Jetson Orin NX
+              </p>
+            </div>
+          </div>
+
+          <div class="project-story two-col">
+            <p>
+              I developed an end-to-end pipeline that enables a delivery
+              robot to recognize parcel labels from camera images and
+              extract building, unit, and recipient information. YOLO OBB
+              detects and crops the label, while a LoRA-tuned InternVL3-2B
+              generates structured fields.
+            </p>
+
+            <p>
+              I implemented distance-aware autofocus using ROS2 and a
+              depth camera and deployed the system on JetPack 6.1 and 7.2.
+              Because no official 7.2 image was available, I built
+              TensorRT-LLM from source and applied SmoothQuant W8A8,
+              meeting the offline constraints of sub-0.5-second
+              end-to-end latency and more than 98% field accuracy.
+            </p>
+          </div>
+
+          <dl class="metric-row compact">
+            <div>
+              <dt>&lt;0.5s</dt>
+              <dd>End-to-end</dd>
+            </div>
+
+            <div>
+              <dt>98%+</dt>
+              <dd>Field accuracy</dd>
+            </div>
+
+            <div>
+              <dt>Offline</dt>
+              <dd>Jetson deployment</dd>
+            </div>
+          </dl>
+
+          <ul class="tags">
+            <li>InternVL3-2B</li>
+            <li>YOLO OBB</li>
+            <li>TensorRT-LLM</li>
+            <li>ROS2</li>
+            <li>Jetson Orin NX</li>
+          </ul>
+
+          <div class="single-visual">
+            <img
+              src="assets/projects/invoice/cover.svg"
+              alt="Visualization of the Jetson Orin NX parcel-label recognition pipeline"
+              loading="lazy"
+            />
+
+            <p>
+              To add real camera footage or inference recordings, place
+              the files in <code>assets/projects/invoice/</code> and
+              duplicate a gallery item.
+            </p>
+          </div>
         </article>
 
-        <!-- Secondary projects -->
-        <section class="secondary-projects" aria-labelledby="secondary-title">
-          <div class="secondary-heading"><p>ADDITIONAL PROJECTS</p><h3 id="secondary-title">Frontend와 AI 서비스를<br>제품 형태로 구현한 경험</h3></div>
+        <!-- Secondary Projects -->
+        <section
+          class="secondary-projects"
+          aria-labelledby="secondary-title"
+        >
+          <div class="secondary-heading">
+            <p>ADDITIONAL PROJECTS</p>
+
+            <h3 id="secondary-title">
+              Building frontend and AI ideas<br />
+              into usable products.
+            </h3>
+          </div>
+
           <div class="secondary-grid">
-            <article class="mini-project" data-category="frontend">
-              <img src="assets/projects/slang/cover.svg" alt="SLANG 프로젝트 커버" loading="lazy">
-              <div><span>08 · FRONTEND / AI</span><h4>SLANG</h4><p>프론트엔드 팀장으로 React Three Fiber 기반 3D 수어 학습 UI를 도입하고, MediaPipe·LightGBM 동작 인식과 학습·퀴즈 서비스를 통합했습니다.</p><ul class="tags"><li>React</li><li>R3F</li><li>Three.js</li></ul></div>
+            <article
+              class="mini-project"
+              data-category="frontend"
+            >
+              <img
+                src="assets/projects/slang/cover.svg"
+                alt="SLANG project cover"
+                loading="lazy"
+              />
+
+              <div>
+                <span>08 · FRONTEND / AI</span>
+                <h4>SLANG</h4>
+
+                <p>
+                  As frontend lead, I introduced a React Three Fiber-based
+                  3D sign-language learning interface and integrated
+                  MediaPipe and LightGBM gesture recognition with learning
+                  and quiz features.
+                </p>
+
+                <ul class="tags">
+                  <li>React</li>
+                  <li>R3F</li>
+                  <li>Three.js</li>
+                </ul>
+              </div>
             </article>
-            <article class="mini-project" data-category="frontend edge">
-              <img src="assets/projects/crop/cover.svg" alt="작물관리 프로젝트 커버" loading="lazy">
-              <div><span>09 · AI APPLICATION</span><h4>Smart Crop Manager</h4><p>CVAE 기반 온실 환경 추천과 YOLOv8 병해충 탐지 기능을 하나의 작물 관리 앱으로 구현해 졸업논문·작품 장려상을 수상했습니다.</p><ul class="tags"><li>CVAE</li><li>YOLOv8</li><li>Application</li></ul></div>
+
+            <article
+              class="mini-project"
+              data-category="frontend edge"
+            >
+              <img
+                src="assets/projects/crop/cover.svg"
+                alt="Smart Crop Manager project cover"
+                loading="lazy"
+              />
+
+              <div>
+                <span>09 · AI APPLICATION</span>
+                <h4>Smart Crop Manager</h4>
+
+                <p>
+                  I combined CVAE-based greenhouse environment
+                  recommendations and YOLOv8 pest and disease detection
+                  in a crop-management application, which received an
+                  award for an outstanding graduation thesis and project.
+                </p>
+
+                <ul class="tags">
+                  <li>CVAE</li>
+                  <li>YOLOv8</li>
+                  <li>Application</li>
+                </ul>
+              </div>
             </article>
-            <article class="mini-project" data-category="frontend edge">
-              <img src="assets/projects/saveway/cover.svg" alt="Saveway 프로젝트 커버" loading="lazy">
-              <div><span>10 · COMPUTER VISION</span><h4>Saveway</h4><p>YOLOv9-S·ESRGAN 기반 도로 손상 탐지와 모바일 촬영→서버 분석→웹 시각화 파이프라인을 구축하고 개발 방향·역할 분담을 총괄했습니다.</p><ul class="tags"><li>YOLOv9</li><li>ESRGAN</li><li>Web</li></ul></div>
+
+            <article
+              class="mini-project"
+              data-category="frontend edge"
+            >
+              <img
+                src="assets/projects/saveway/cover.svg"
+                alt="Saveway project cover"
+                loading="lazy"
+              />
+
+              <div>
+                <span>10 · COMPUTER VISION</span>
+                <h4>Saveway</h4>
+
+                <p>
+                  I built a YOLOv9-S- and ESRGAN-based road-damage
+                  detection pipeline from mobile capture to server-side
+                  analysis and web visualization, while coordinating the
+                  technical direction and team responsibilities.
+                </p>
+
+                <ul class="tags">
+                  <li>YOLOv9</li>
+                  <li>ESRGAN</li>
+                  <li>Web</li>
+                </ul>
+              </div>
             </article>
-            <article class="mini-project" data-category="frontend">
-              <img src="assets/projects/pick-gold/cover.svg" alt="Pick the Gold 프로젝트 커버" loading="lazy">
-              <div><span>11 · FULL STACK</span><h4>Pick the Gold</h4><p>React·TypeScript 프론트엔드와 Node.js·MySQL 백엔드로 주간 예측 베팅 웹서비스를 구현하며 서비스 전체 데이터 흐름을 경험했습니다.</p><ul class="tags"><li>React</li><li>TypeScript</li><li>Node.js</li></ul></div>
+
+            <article
+              class="mini-project"
+              data-category="frontend"
+            >
+              <img
+                src="assets/projects/pick-gold/cover.svg"
+                alt="Pick the Gold project cover"
+                loading="lazy"
+              />
+
+              <div>
+                <span>11 · FULL STACK</span>
+                <h4>Pick the Gold</h4>
+
+                <p>
+                  I built a weekly prediction and betting web service
+                  with a React and TypeScript frontend and a Node.js and
+                  MySQL backend, gaining full-stack experience across the
+                  service data flow.
+                </p>
+
+                <ul class="tags">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Node.js</li>
+                </ul>
+              </div>
             </article>
           </div>
         </section>
       </div>
     </section>
 
-    <section id="experience" class="experience shell section-space">
-      <div class="section-label reveal"><span>03</span><p>EXPERIENCE</p></div>
+    <section
+      id="experience"
+      class="experience shell section-space"
+    >
+      <div class="section-label reveal">
+        <span>03</span>
+        <p>EXPERIENCE</p>
+      </div>
+
       <div class="experience-grid">
-        <h2 class="reveal">Research<br><em>Experience</em></h2>
+        <h2 class="reveal">
+          Research<br />
+          <em>Experience</em>
+        </h2>
+
         <div class="timeline">
-          <article class="timeline-item reveal"><time>2026.01—03</time><div><h3>HuGe Lab, KAIST</h3><p>Intern Researcher</p><span>Scalable Neural Simulator · technical ablation · Sim2Real benchmark</span></div></article>
-          <article class="timeline-item reveal"><time>2024.12—2026.02</time><div><h3>Korea Institute of Science and Technology</h3><p>Intern Researcher · Humanoid Research Group</p><span>Real-robot imitation learning · mobile manipulation RL · efficient robotics</span></div></article>
-          <article class="timeline-item reveal"><time>2024.08—12</time><div><h3>IRIS Lab, Sungkyunkwan University</h3><p>Undergraduate Researcher</p><span>Multi-bit post-training quantization for CNN and ViT</span></div></article>
+          <article class="timeline-item reveal">
+            <time>2026.01—03</time>
+
+            <div>
+              <h3>HuGe Lab, KAIST</h3>
+              <p>Intern Researcher</p>
+              <span>
+                Scalable Neural Simulator · technical ablation ·
+                Sim2Real benchmark
+              </span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <time>2024.12—2026.02</time>
+
+            <div>
+              <h3>Korea Institute of Science and Technology</h3>
+              <p>
+                Intern Researcher · Humanoid Research Group
+              </p>
+              <span>
+                Real-robot imitation learning · mobile manipulation RL ·
+                efficient robotics
+              </span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <time>2024.08—12</time>
+
+            <div>
+              <h3>IRIS Lab, Sungkyunkwan University</h3>
+              <p>Undergraduate Researcher</p>
+              <span>
+                Multi-bit post-training quantization for CNN and ViT
+              </span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="skills section-space">
       <div class="shell">
-        <div class="section-label reveal"><span>04</span><p>CAPABILITIES</p></div>
+        <div class="section-label reveal">
+          <span>04</span>
+          <p>CAPABILITIES</p>
+        </div>
+
         <div class="skill-cards">
-          <article class="skill-card reveal"><span>01</span><h3>Frontend</h3><p>React, TypeScript, React Three Fiber, Three.js, HTML/CSS, responsive UI, visualization</p></article>
-          <article class="skill-card reveal"><span>02</span><h3>Robotics</h3><p>ROS2, Franka Panda, teleoperation, sensor integration, robot control, real-world evaluation</p></article>
-          <article class="skill-card reveal"><span>03</span><h3>Simulation</h3><p>MuJoCo, Isaac, RaiSim, MJX, Gazebo, kinematics, dynamics, collision and Sim2Real</p></article>
-          <article class="skill-card reveal"><span>04</span><h3>Edge AI</h3><p>PyTorch, TensorRT, TensorRT-LLM, quantization, LoRA, Docker, Jetson deployment</p></article>
+          <article class="skill-card reveal">
+            <span>01</span>
+            <h3>Frontend</h3>
+            <p>
+              React, TypeScript, React Three Fiber, Three.js,
+              HTML/CSS, responsive UI, visualization
+            </p>
+          </article>
+
+          <article class="skill-card reveal">
+            <span>02</span>
+            <h3>Robotics</h3>
+            <p>
+              ROS2, Franka Panda, teleoperation, sensor integration,
+              robot control, real-world evaluation
+            </p>
+          </article>
+
+          <article class="skill-card reveal">
+            <span>03</span>
+            <h3>Simulation</h3>
+            <p>
+              MuJoCo, Isaac, RaiSim, MJX, Gazebo, kinematics,
+              dynamics, collision, and Sim2Real
+            </p>
+          </article>
+
+          <article class="skill-card reveal">
+            <span>04</span>
+            <h3>Edge AI</h3>
+            <p>
+              PyTorch, TensorRT, TensorRT-LLM, quantization,
+              LoRA, Docker, Jetson deployment
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="credentials" class="credentials shell section-space">
-      <div class="section-label reveal"><span>05</span><p>CREDENTIALS</p></div>
+    <section
+      id="credentials"
+      class="credentials shell section-space"
+    >
+      <div class="section-label reveal">
+        <span>05</span>
+        <p>CREDENTIALS</p>
+      </div>
+
       <div class="credential-columns">
         <div class="reveal">
           <h2>Education</h2>
-          <div class="credential-item"><time>2023—2025</time><div><h3>Sungkyunkwan University</h3><p>Computer Science and Engineering · GPA 3.92/4.5</p></div></div>
-          <div class="credential-item"><time>2020—2023</time><div><h3>Hanyang University ERICA</h3><p>Mechanical Engineering · GPA 3.70/4.5</p></div></div>
+
+          <div class="credential-item">
+            <time>2023—2025</time>
+
+            <div>
+              <h3>Sungkyunkwan University</h3>
+              <p>
+                Computer Science and Engineering · GPA 3.92/4.5
+              </p>
+            </div>
+          </div>
+
+          <div class="credential-item">
+            <time>2020—2023</time>
+
+            <div>
+              <h3>Hanyang University ERICA</h3>
+              <p>
+                Mechanical Engineering · GPA 3.70/4.5
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class="reveal">
           <h2>Awards</h2>
+
           <ul class="award-list">
-            <li><time>2025.08</time><span>제3회 자율주행 SW 경진대회 장려상</span></li>
-            <li><time>2025.07</time><span>소프트웨어학과 우수 졸업논문·작품 장려상</span></li>
-            <li><time>2025.02</time><span>미래형자동차 마이크로디그리 장학금</span></li>
-            <li><time>2024.12</time><span>Certificate of Open Source SW Activity 우수상</span></li>
-            <li><time>2024.08</time><span>K-SoftVation Showcase 3위</span></li>
-            <li><time>2024.07</time><span>제2회 자율주행 SW 경진대회 챌린지상</span></li>
-            <li><time>2024.02</time><span>ROS2 기반 자율주행 해커톤 장려상</span></li>
-            <li><time>2021.11</time><span>ERICA Online English Speech Competition 동상</span></li>
+            <li>
+              <time>2025.08</time>
+              <span>
+                Encouragement Award, 3rd Autonomous Driving
+                Software Competition
+              </span>
+            </li>
+
+            <li>
+              <time>2025.07</time>
+              <span>
+                Outstanding Graduation Thesis and Project Award,
+                Department of Software
+              </span>
+            </li>
+
+            <li>
+              <time>2025.02</time>
+              <span>
+                Future Mobility Microdegree Scholarship
+              </span>
+            </li>
+
+            <li>
+              <time>2024.12</time>
+              <span>
+                Excellence Award, Certificate of Open Source
+                Software Activity
+              </span>
+            </li>
+
+            <li>
+              <time>2024.08</time>
+              <span>
+                3rd Place, K-SoftVation Showcase
+              </span>
+            </li>
+
+            <li>
+              <time>2024.07</time>
+              <span>
+                Challenge Award, 2nd Autonomous Driving
+                Software Competition
+              </span>
+            </li>
+
+            <li>
+              <time>2024.02</time>
+              <span>
+                Encouragement Award, ROS2 Autonomous Driving Hackathon
+              </span>
+            </li>
+
+            <li>
+              <time>2021.11</time>
+              <span>
+                Bronze Award, ERICA Online English Speech Competition
+              </span>
+            </li>
           </ul>
         </div>
+
         <div class="reveal">
           <h2>Certificates</h2>
-          <ul class="certificate-list"><li>정보처리기사</li><li>SQLD</li><li>ADsP</li><li>컴퓨터활용능력 1급</li><li>한국사능력검정시험 2급</li></ul>
+
+          <ul class="certificate-list">
+            <li>Engineer Information Processing</li>
+            <li>SQL Developer (SQLD)</li>
+            <li>
+              Advanced Data Analytics Semi-Professional (ADsP)
+            </li>
+            <li>
+              Computer Specialist in Spreadsheet &amp; Database,
+              Level 1
+            </li>
+            <li>
+              Korean History Proficiency Test, Level 2
+            </li>
+          </ul>
+
           <h2 class="download-title">Downloads</h2>
-          <div class="download-links"><a href="assets/documents/JiyeonJoung_CV.pdf" target="_blank">CV PDF ↗</a><a href="assets/documents/KIST_interview_portfolio.pptx">Presentation ↓</a><a href="assets/documents/PTMQ_final_report.pdf" target="_blank">PTMQ Report ↗</a></div>
+
+          <div class="download-links">
+            <a
+              href="assets/documents/JiyeonJoung_CV.pdf"
+              target="_blank"
+            >
+              CV PDF ↗
+            </a>
+
+            <a href="assets/documents/KIST_interview_portfolio.pptx">
+              Presentation ↓
+            </a>
+
+            <a
+              href="assets/documents/PTMQ_final_report.pdf"
+              target="_blank"
+            >
+              PTMQ Report ↗
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="contact">
       <div class="shell contact-grid">
-        <div><p class="eyebrow">LET'S BUILD ROBOTS PEOPLE CAN USE</p><h2>복잡한 로봇 시스템을<br><em>명확한 경험</em>으로.</h2></div>
-        <div class="contact-info"><a href="mailto:jjy8301004@gmail.com">jjy8301004@gmail.com</a><a href="tel:+821050675921">+82 10-5067-5921</a><a href="https://github.com/sanananan3" target="_blank" rel="noreferrer">github.com/sanananan3 ↗</a><span>Seoul, Republic of Korea</span></div>
+        <div>
+          <p class="eyebrow">
+            LET'S BUILD ROBOTS PEOPLE CAN USE
+          </p>
+
+          <h2>
+            Efficient robotic systems,<br />
+            <em>built for the real world.</em>
+          </h2>
+        </div>
+
+        <div class="contact-info">
+          <a href="mailto:jjy8301004@gmail.com">
+            jjy8301004@gmail.com
+          </a>
+
+          <a href="tel:+821050675921">
+            +82 10-5067-5921
+          </a>
+
+          <a
+            href="https://github.com/sanananan3"
+            target="_blank"
+            rel="noreferrer"
+          >
+            github.com/sanananan3 ↗
+          </a>
+
+          <span>Seoul, Republic of Korea</span>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer shell"><p>© <span id="year"></span> Jiyeon Joung</p><a href="#top">Back to top ↑</a></footer>
+  <footer class="site-footer shell">
+    <p>
+      © <span id="year"></span> Jiyeon Joung
+    </p>
+
+    <a href="#top">
+      Back to top ↑
+    </a>
+  </footer>
 
   <dialog class="media-dialog" id="mediaDialog">
-    <button class="dialog-close" type="button" aria-label="닫기">×</button>
+    <button
+      class="dialog-close"
+      type="button"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
     <div class="dialog-content"></div>
     <div class="dialog-caption"></div>
   </dialog>
